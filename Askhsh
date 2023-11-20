@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+int main ()
+{
+int a, b, c, small;
+float avg;
+ 
+
+printf("Enter three numbers: \n");
+printf("a: " , &a);
+scanf("%d" , &a);
+printf("b: " , &b);
+scanf("%d" , &b);
+printf("c: ", &c);
+scanf("%d" , &c);
+ 
+
+if ( a > b && a > c)
+printf ("Biggest number is %d" , a);
+if ( b > a && b > c)
+printf ("Biggest number is %d" , b);
+    if ( c > a && c > b )
+    printf ("Biggest number is %d" , c);
+    
+    
+    if (a<b)
+    {
+    if (b<c)
+    small=a;
+    else 
+    {
+    if(a<c)
+    small = a;
+    else
+    small = c;
+}
+}
+else
+{
+if (b<c)
+   small = b;
+else
+   small = c;
+}
+  
+ 
+
+printf("\nSmallest number is: %d \n\n" , small);
+ 
+
+avg=(a+b+c)/3;
+printf("Average number is: %0.f" , avg);
+ 
+ 
+return 0;
+}
